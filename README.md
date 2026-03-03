@@ -1,78 +1,80 @@
 # Unvollendet – Advanced Turn-Based Game System
 
-**Unvollendet** es un proyecto ambicioso que fusiona narrativa profunda, combate estratégico por turnos y una estética híbrida 2D/3D en estilo 2.5D.  
+## 🇬🇧 English
 
-El juego está diseñado con una arquitectura modular enfocada en escalabilidad, control de estados robusto y toma de decisiones compleja tanto a nivel narrativo como en inteligencia artificial.
+**Unvollendet** is an ambitious project that merges deep narrative design, strategic turn-based combat, and a hybrid 2D/3D aesthetic in a 2.5D style.
 
----
-
-##  Características Principales
-
-- Sistema de combate por turnos avanzado
-- IA estratégica para jefe final
-- Sistema de decisiones con múltiples finales
-- Integración 2D/3D (estilo 2.5D)
-- Control dinámico de música, video y transiciones
-- Gestión de estados robusta y segura
+The game is built on a modular architecture focused on scalability, robust state control, and complex decision-making systems at both narrative and artificial intelligence levels.
 
 ---
 
-# IA del Jefe Final
+## Main Features
 
-El sistema de IA no funciona mediante decisiones aleatorias simples.  
-
-Evalúa dinámicamente múltiples variables:
-
-- Estado actual del combate
-- Vida y defensa
-- Prioridades tácticas
-- Condiciones simultáneas
-- Recursos disponibles
-
-La IA analiza el contexto completo antes de actuar, utilizando:
-
-- Comparaciones condicionales complejas
-- Estructuras enlazadas
-- Probabilidades controladas para generar variabilidad coherente
-
-El resultado es un comportamiento estratégico adaptable que reacciona a la situación real del jugador.
+- Advanced turn-based combat system  
+- Strategic final boss AI behavior  
+- Multi-ending decision system  
+- 2D/3D hybrid integration (2.5D style)  
+- Dynamic music, video, and transition control  
+- Robust and safe state management  
 
 ---
 
-# Sistema de Turnos
+## Final Boss AI
 
-Sistema completo basado en máquina de estados:
+The AI system does not rely on simple random decision-making.
 
-- Control de transiciones seguras
-- Validación constante de condiciones
-- Bloqueo de entrada durante ejecución
-- Uso de coroutines para ejecución asincrónica
-- Sincronización con animaciones y eventos
-- Prevención de estados inválidos
-- Gestión de recursos (vida, energía, objetos)
-- Control automático del ciclo principal del combate
+It dynamically evaluates multiple variables including:
 
-Diseñado para mantener coherencia interna y evitar errores lógicos durante el flujo del combate.
+- Current combat state  
+- Health and defense values  
+- Tactical priorities  
+- Simultaneous logical conditions  
+- Resource availability  
+
+Before executing any action, the AI analyzes the full context using:
+
+- Complex conditional comparisons  
+- Linked logical evaluation structures  
+- Controlled probability variation to maintain behavioral coherence  
+
+The result is an adaptive strategic behavior that responds to real combat situations.
 
 ---
 
-# Estructura del Proyecto
+## Turn System Architecture
 
-Cada carpeta contiene su propio `README.md` con explicación detallada de su funcionamiento interno.
+The combat flow is implemented using a state-machine-based approach including:
+
+- Safe transition validation  
+- Continuous condition monitoring  
+- Input blocking during action execution  
+- Coroutine-based asynchronous processing  
+- Animation-event synchronization  
+- Invalid state prevention  
+- Resource management (health, energy, items)  
+- Automatic combat cycle control  
+
+The system is designed to maintain logical consistency and prevent runtime state corruption.
 
 ---
 
-## Bosses
+## Project Structure
 
-Lógica y comportamiento del jefe final.
+Each folder contains its own `README.md` with detailed internal documentation.
+
+---
+
+### Bosses
+
+Final boss behavior and logic.
 
 - `Boss.cs`
 
 ---
 
-## CombatSystem
+### CombatSystem
 
-Núcleo del sistema de combate y entidades jugables.
+Core combat mechanics and entity logic.
 
 - `Character.cs`
 - `Items.cs`
@@ -81,9 +83,9 @@ Núcleo del sistema de combate y entidades jugables.
 
 ---
 
-## Controllers
+### Controllers
 
-Control de elementos audiovisuales y transiciones.
+Audio-visual system management and scene transitions.
 
 - `ControlMusica.cs`
 - `ControladorVideo.cs`
@@ -91,17 +93,17 @@ Control de elementos audiovisuales y transiciones.
 
 ---
 
-## GameManager
+### GameManager
 
-Gestión global del estado del juego y control central del sistema.
+Global game state orchestration.
 
 - `GameManager.cs`
 
 ---
 
-## ScriptsEscena
+### ScriptsEscena
 
-Control narrativo y lógica de escenas.
+Narrative flow and scene logic control.
 
 - `BotonColor.cs`
 - `Conversaciones.cs`
@@ -113,12 +115,84 @@ Control narrativo y lógica de escenas.
 
 ---
 
-# Filosofía de Diseño
+## Design Philosophy
 
-Unvollendet está construido bajo principios de:
+Unvollendet follows principles of:
 
-- Separación clara de responsabilidades
-- Modularidad estructural
-- Escalabilidad narrativa
-- Control riguroso del flujo lógico
-- Diseño orientado a sistemas complejos
+- Clear separation of responsibilities  
+- Structural modularity  
+- Narrative scalability  
+- Strict logical flow control  
+- System-oriented software design  
+- Robust runtime behavior management  
+
+---
+
+## 🇪🇸 Español
+
+**Unvollendet** es un proyecto ambicioso que combina narrativa profunda, combate estratégico por turnos y una estética híbrida 2D/3D en estilo 2.5D.
+
+El juego está desarrollado bajo una arquitectura modular enfocada en escalabilidad, control robusto de estados y sistemas complejos de toma de decisiones tanto narrativas como de inteligencia artificial.
+
+---
+
+## Características Principales
+
+- Sistema de combate por turnos avanzado  
+- IA estratégica para jefe final  
+- Sistema de decisiones con múltiples finales  
+- Integración 2D/3D en estilo 2.5D  
+- Control dinámico de música, video y transiciones  
+- Gestión de estados segura y robusta  
+
+---
+
+## IA del Jefe Final
+
+El sistema de IA no se basa en decisiones aleatorias simples.
+
+Evalúa dinámicamente múltiples variables como:
+
+- Estado actual del combate  
+- Vida y defensa  
+- Prioridades tácticas  
+- Condiciones lógicas simultáneas  
+- Disponibilidad de recursos  
+
+Antes de ejecutar una acción, la IA analiza el contexto completo mediante:
+
+- Comparaciones condicionales complejas  
+- Estructuras lógicas enlazadas  
+- Variaciones probabilísticas controladas para mantener coherencia comportamental  
+
+El resultado es un comportamiento estratégico adaptable que reacciona a la situación real del combate.
+
+---
+
+## Sistema de Turnos
+
+Sistema de combate basado en máquina de estados que incluye:
+
+- Validación segura de transiciones  
+- Monitorización continua de condiciones  
+- Bloqueo de entrada durante la ejecución de acciones  
+- Procesamiento asincrónico mediante coroutines  
+- Sincronización con animaciones y eventos  
+- Prevención de estados inválidos  
+- Gestión de recursos (vida, energía, objetos)  
+- Control automático del ciclo de combate  
+
+Diseñado para mantener coherencia lógica y prevenir corrupción de estados en tiempo de ejecución.
+
+---
+
+## Filosofía de Diseño
+
+Unvollendet se desarrolla bajo principios de:
+
+- Separación clara de responsabilidades  
+- Modularidad estructural  
+- Escalabilidad narrativa  
+- Control estricto del flujo lógico  
+- Diseño orientado a sistemas  
+- Gestión robusta del runtime  

@@ -1,4 +1,4 @@
-# 🎭 Unvollendet – Advanced Turn-Based Game System
+# Unvollendet – Advanced Turn-Based Game System
 
 **Unvollendet** es un proyecto ambicioso que fusiona narrativa profunda, combate estratégico por turnos y una estética híbrida 2D/3D en estilo 2.5D.  
 
